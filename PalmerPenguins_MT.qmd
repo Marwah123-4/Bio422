@@ -1,0 +1,23 @@
+---
+title: "PalmerPenguins"
+author: "Marwah Al Thuwayni"
+format: html
+editor: visual
+---
+
+# *Penguins Analysis*
+
+Analysis of penguins using palmers data
+
+```{r}
+#Load the tidyverse
+library(tidyverse)
+
+#Read the penguins_samp1 data file from github
+penguins <- read_csv("https://raw.githubusercontent.com/mcduryea/Intro-to-Bioinformatics/main/data/penguins_samp1.csv")
+
+#See the first six rows of the data we've read in to our notebook
+penguins %>% head()
+```
+
+I see there are 6 rows and 8 columns of data. The data is about species Gentoo found in island Biscoe and their different physical features. There are different categorical and numerical values where categorical values include species, island, and sex and numerical values includes bioll length, depth, flipper length,year and body mass.
