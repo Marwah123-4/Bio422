@@ -21,3 +21,41 @@ penguins %>% head()
 ```
 
 I see there are 6 rows and 8 columns of data. The data is about species Gentoo found in island Biscoe and their different physical features. There are different categorical and numerical values where categorical values include species, island, and sex and numerical values includes bioll length, depth, flipper length,year and body mass.
+
+# Data Manipulation
+
+Using R code to manipulate data. We’ll learn how to filter rows, subset columns, group data, and compute summary statistics.
+
+-   Comparing how the body mass of the species changed overtime.
+
+```{r}
+penguins %>%
+  count(island)
+```
+
+I see that there is 36 Biscoe islands, 3 Dream islands and 5 Torgersen islands.
+
+```{r}
+penguins %>%
+  count(species)
+```
+
+I see that there is 9 Adelie, 2 Chinstrap and 33 Gentoo.
+
+```{r}
+penguins %>% count(island, species)
+```
+
+This Table shows how many species are in each island.
+
+```{r}
+penguins %>%
+  count(island, species) %>%
+  pivot_wider(names_from = species, values_from = n, values_fill = 0)
+
+```
+
+```{r}
+install.packages("kableExtra")
+library(kableExtra)
+```
