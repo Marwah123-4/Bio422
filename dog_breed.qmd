@@ -49,3 +49,23 @@ Below are the top 10 hunting dogs and companion dogs we chose to compare:
     8.  American Eskima Dogs
     9.  Boston Terriers
     10. Chinese Crested
+
+Abstract: 
+
+Dogs are a very popular pet found in many households. They are bred to provide companionship to the human but some dogs are bred to do hunting. But over time some of these hunting dogs are also being kept as a companion dog instead. For example, breeds like Golden Retriever are a well known hunting dog due to its speed, ease of training, loyalty, and friendliness, which allow it to be trained for both hunting and companionship. Since hunting dogs are known to be fierce, and independent by nature the focus of this research is to see whether hunting dogs could be friendlier and trainable as companion dogs. 
+
+Introduction:\
+Dogs are the domestic mammal from the family Canidae and order Carnivora which is related to foxes and jackals. For more than 12,000 years dogs have been on the side of humans as a friend, protector, herding dogs or hunting companion. Humans have also modified or genetically engineered dogs according to the characteristics they want in the dog. (Britannica). According to Fédération Cynologique Internationale (FCI), 339 breeds of dogs are recognized internationally which are divided into 10 groups depending on the dog’s purpose or their appearance among which includes companion and hunting dogs. (Coren, 2013)
+
+Companion dogs are trained differently depending on their living environment; they are trained to be friendlier, more devoted, easier to talk to, and more convenient to have around the house. Bichons Frises, Bulldogs, Dalmatians, Havanese, Finnish Spitz, Poodles, Pugs, American Eskima Dogs, Boston Terriers, and Chinese Crested are the companion dogs selected for this data. These dogs are well recognized for being friendly, intelligent, and simple to teach. They make wonderful home pets and companions for children. 
+
+On the other hand, hunting dogs may share similar characteristics, but they require additional training in an outside setting. They often need special diets to help them construct their bodies in a certain way, and they need to be trained to be fast, strong, and adaptable. Labrador Retrievers, Shiba Inus, German Wirehaired Pointers, American Foxhounds, English Springer Spaniels, Black and Tan Coonhounds, Britannys, Norwegian Elkhounds, and English Cocker Spaniels are the hunting dogs selected for this data. These dogs were selected based on their hunting abilities, such as their ability to hunt small or large animals, birds, or their senses that aid in the hunter's ability to locate its prey more quickly. They are often taught according to the hunter's requirements. 
+
+```{r}
+install.packages("janitor")
+library(janitor)
+names(exploratory_data) <- janitor::make_clean_names(names(exploratory_data))
+```
+
+\
+\
